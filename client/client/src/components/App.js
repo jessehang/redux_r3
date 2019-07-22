@@ -1,7 +1,7 @@
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom'; //react router dependency
-//Browser router creates history object (background) and listens to changes
-//It communicates path down to the route components
+import { BrowserRouter, Route } from 'react-router-dom'; //  react router dependency
+//  Browser router creates history object (background) and listens to changes
+//  It communicates path down to the route components
 import StreamCreate from './streams/StreamCreate';
 import StreamEdit from './streams/StreamEdit';
 import StreamDelete from './streams/StreamDelete';
@@ -26,13 +26,13 @@ const App = () => {
   );
 };
 
-//3 different types of routers
-//browser router looks at anything after top level domain (.com etc)
-//must respond with index.html instead of 404 via server file * line
+//  3 different types of routers
+//  browser router looks at anything after top level domain (.com etc)
+//  must respond with index.html instead of 404 via server file * line
 
-//hash router /#/ after top level domain
-//# is only being used by client
+//  hash router /#/ after top level domain
+//  # is only being used by client
 
-//memory router does not look at url
+//  memory router does not look at url
 
 export default App;
