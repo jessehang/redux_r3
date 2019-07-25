@@ -1,13 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import history from '../history';
 
 const Modal = props => {
   return ReactDOM.createPortal(
-    <div
-      onClick={() => history.push('/')}
-      className="ui dimmer modals visible active"
-    >
+    <div onClick={props.onDismiss} className="ui dimmer modals visible active">
       <div
         onClick={e => e.stopPropagation()}
         className="ui standard modal visible active"
@@ -22,5 +18,6 @@ const Modal = props => {
 };
 
 //  createPortal takes in some jsx and renders it into whatever is put inside the selector
+// good for modals since it allows for reuseability instead of putting a component in a deeply nested component
 
 export default Modal;
